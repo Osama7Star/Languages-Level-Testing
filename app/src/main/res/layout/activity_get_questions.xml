@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.Alnajim.osama.StarLanguage.QuestionGame.getQuestions">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/getquestionTextview"
+            android:text=""
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:background="@color/black"
+            android:paddingBottom="20dp"
+            android:textColor="@color/white"
+            android:paddingTop="20dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="questoin here"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/questionText"    />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/addAnswer1"
+                android:hint="answer1"
+                android:layout_gravity="center"
+                android:gravity="center" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/addAnswer2"
+                android:hint="answer2"
+                android:layout_gravity="center"
+                android:gravity="center"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/addAnswer3"
+                android:hint="answer3"
+                android:layout_gravity="center"
+                android:gravity="center"
+
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/addAnswer4"
+                android:hint="answer4"
+                android:layout_gravity="center"
+                android:gravity="center"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Put the Correct Answer"
+                        android:paddingRight="80dp"
+                        />
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:id="@+id/correctAnswerSpinner">
+
+
+                    </Spinner>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Choose The Category  "
+                        android:paddingRight="80dp"
+                        />
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:id="@+id/showCategorySpinner">
+
+
+                    </Spinner>
+                </LinearLayout>
+            </LinearLayout>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/addQuestion"
+                android:layout_gravity="center"
+                android:text="ADD"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

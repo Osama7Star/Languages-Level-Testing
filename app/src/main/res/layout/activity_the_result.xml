@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.Alnajim.osama.StarLanguage.QuestionGame.TheResult"
+    tools:showIn="@layout/activity_the_result"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The Result"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:background="@color/white"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/showResult"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/white" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp">
+
+            <ProgressBar
+                android:id="@+id/progressBarResult"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:progressDrawable="@drawable/customeprogressbar" />
+
+            <TextView
+                android:id="@+id/tvPercentage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:gravity="bottom"
+                android:textColor="@color/black"
+                android:layout_alignLeft="@id/progressBarResult"
+                android:layout_alignTop="@id/progressBarResult"
+                android:layout_alignRight="@id/progressBarResult"
+                android:layout_alignBottom="@id/progressBarResult"
+                android:background="@android:color/transparent"
+                android:layout_centerVertical="true"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/showquestionrecycleview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:background="@color/black"
+
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="31dp" />
+
+</LinearLayout>

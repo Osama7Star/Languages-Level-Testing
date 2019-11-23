@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.Alnajim.osama.StarLanguage.QuestionGame.addQuestionLanguage"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="In Which Language Do you want to add questions"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginBottom="20dp"
+            />
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/addEnglishQuestion"
+            android:text="English"
+
+            android:onClick="addEnglishQuestion"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/addTurkishQuestion"
+            android:text="Turkish"
+            android:onClick="addTurkishQuestion"
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
